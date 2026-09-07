@@ -39,19 +39,27 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-rose-200">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
       <a href="#home" class="flex items-center gap-3">
-        <!-- Precise Monogram Logo SVG -->
-        <svg class="w-12 h-12 text-stone-900" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 120 75 L 120 230 M 120 75 L 205 75 M 120 230 L 210 230" stroke="currentColor" stroke-width="12" stroke-linecap="square"/>
-          <path d="M 180 245 C 180 230 195 230 210 230 C 200 245 190 250 180 245 Z" fill="currentColor"/>
-          <path d="M 148 135 C 180 135 220 180 272 250" stroke="currentColor" stroke-width="14" stroke-linecap="round"/>
-          <path d="M 272 120 L 272 250" stroke="currentColor" stroke-width="10"/>
-          <path d="M 272 105 L 272 65 M 252 85 L 292 85" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-          <path d="M 262 75 L 282 95 M 282 75 L 262 95" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <!-- Exact Inline SVG recreating the Étoile Noire Logo -->
+        <svg class="h-10 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Main E stroke -->
+          <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
+          <!-- E middle crossbar -->
+          <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
+          <!-- N left vertical stem -->
+          <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
+          <circle cx="460" cy="620" r="12" fill="currentColor"/>
+          <!-- N diagonal line -->
+          <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
+          <!-- N right stem -->
+          <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
+          <!-- Star on N stem -->
+          <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
+          <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
+          <!-- ÉTOILE NOIRE text -->
+          <text x="500" y="740" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="82" letter-spacing="18" fill="currentColor" font-weight="500">ÉTOILE NOIRE</text>
+          <!-- AGENCY text -->
+          <text x="500" y="810" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" letter-spacing="24" fill="currentColor" font-weight="400">AGENCY</text>
         </svg>
-        <div class="flex flex-col leading-none">
-          <span class="font-serif text-xl tracking-[0.25em] font-medium text-stone-900">ÉTOILE NOIRE</span>
-          <span class="text-[9px] tracking-[0.35em] text-rose-500 font-bold uppercase mt-1">A G E N C Y</span>
-        </div>
       </a>
       
       <nav class="hidden md:flex items-center space-x-7 text-xs tracking-widest font-semibold uppercase text-stone-600">
@@ -92,12 +100,12 @@
       </div>
     </div>
 
-    <!-- Hero Image Container (Glamorous, High-End Creator Lifestyle) -->
+    <!-- Hero Image Container -->
     <div class="relative">
       <div class="absolute -inset-3 bg-rose-200/50 rounded-3xl -rotate-1 -z-10 blur-sm"></div>
       <div class="bg-white p-3 rounded-2xl shadow-xl border border-rose-200">
         <div class="aspect-[4/3] bg-stone-100 rounded-xl overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="Glamorous, stylish female content creators taking selfies together" class="object-cover w-full h-full">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="Glamorous content creators" class="object-cover w-full h-full">
           <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-rose-100 shadow-md">
             <p class="text-xs font-bold uppercase text-rose-500 tracking-wider">Proven Track Record</p>
             <p class="font-serif text-2xl font-bold text-stone-900">$7,000,000+ <span class="text-xs font-sans text-stone-500 font-normal">Generated for Creators</span></p>
@@ -327,11 +335,15 @@
   <footer class="bg-white border-t border-rose-200 py-10 text-center text-xs text-stone-500 tracking-wider">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex items-center gap-2">
-        <svg class="w-6 h-6 text-stone-900" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 120 75 L 120 230 M 120 75 L 205 75 M 120 230 L 210 230" stroke="currentColor" stroke-width="16"/>
-          <path d="M 148 135 C 180 135 220 180 272 250" stroke="currentColor" stroke-width="18"/>
-          <path d="M 272 120 L 272 250" stroke="currentColor" stroke-width="14"/>
-          <path d="M 272 105 L 272 65 M 252 85 L 292 85" stroke="currentColor" stroke-width="8"/>
+        <svg class="h-6 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
+          <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
+          <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
+          <circle cx="460" cy="620" r="12" fill="currentColor"/>
+          <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
+          <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
+          <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
+          <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
         </svg>
         <span class="font-serif text-base tracking-widest text-stone-900 font-bold">ÉTOILE NOIRE</span>
       </div>
