@@ -1,597 +1,144 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Étoile Noire Agency | Premier OF Management</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            rose: {
-              50: '#fdf2f4',
-              100: '#fbe4e8',
-              200: '#f7bdca',
-              300: '#f08ea4',
-              400: '#e35378',
-              500: '#d12e58',
-              600: '#b81c46',
-            },
-            softbg: '#FAFAF9',
-          },
-          fontFamily: {
-            serif: ['Cormorant Garamond', 'serif'],
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-10px)' },
-            }
-          },
-          animation: {
-            float: 'float 4s ease-in-out infinite',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-softbg text-stone-800 font-sans antialiased selection:bg-rose-300 selection:text-white min-h-screen flex flex-col">
+<body>
 
-  <!-- Header Navigation -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-rose-200">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
-      <a href="#welcome" class="flex items-center gap-3">
-        <svg class="h-14 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
-          <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
-          <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
-          <circle cx="460" cy="620" r="12" fill="currentColor"/>
-          <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
-          <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
-          <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
-          <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
-          <text x="500" y="740" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="82" letter-spacing="18" fill="currentColor" font-weight="500">ÉTOILE NOIRE</text>
-          <text x="500" y="810" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" letter-spacing="24" fill="currentColor" font-weight="400">AGENCY</text>
-        </svg>
+  <!-- NAVIGATION HEADER -->
+  <header class="header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#welcome" class="brand-logo">
+        <strong>ÉTOILE NOIRE</strong> AGENCY
       </a>
-      
-      <nav class="hidden md:flex items-center space-x-8 text-xs tracking-widest font-semibold uppercase text-stone-600">
-        <a href="#welcome" class="hover:text-rose-500 transition">Welcome</a>
-        <a href="#about" class="hover:text-rose-500 transition">About Us</a>
-        <a href="#services" class="hover:text-rose-500 transition">Services</a>
-        <a href="#creators" class="hover:text-rose-500 transition">Creators</a>
-        <a href="#careers" class="hover:text-rose-500 transition">Careers</a>
+      <nav class="nav-links">
+        <a href="#welcome">WELCOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#services">SERVICES</a>
+        <a href="#creators">CREATORS</a>
+        <a href="#careers">CAREERS</a>
       </nav>
-
-      <div class="flex items-center gap-3">
-        <a href="#careers" class="hidden sm:inline-block border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
-          Join Our Team
-        </a>
-        <a href="#creators" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-200">
-          Apply Now
-        </a>
+      <div class="nav-actions">
+        <a href="#careers" class="btn btn-outline">JOIN OUR TEAM</a>
+        <a href="#creators" class="btn btn-primary">APPLY NOW</a>
       </div>
     </div>
   </header>
 
-  <!-- Pages Container -->
-  <main class="flex-grow">
-    
-    <!-- PAGE 1: WELCOME / LANDING PAGE -->
-    <section id="welcome" class="page-section min-h-[calc(100vh-90px)] flex items-center justify-center py-16 px-6 lg:px-8 text-center bg-gradient-to-b from-white via-rose-50/30 to-softbg">
-      <div class="max-w-4xl mx-auto flex flex-col items-center">
-        <div class="mb-10 transform hover:scale-105 transition duration-500">
-          <svg class="h-44 sm:h-56 lg:h-64 w-auto text-stone-900 drop-shadow-sm" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
-            <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
-            <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
-            <circle cx="460" cy="620" r="12" fill="currentColor"/>
-            <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
-            <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
-            <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
-            <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
-            <text x="500" y="740" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="82" letter-spacing="18" fill="currentColor" font-weight="500">ÉTOILE NOIRE</text>
-            <text x="500" y="810" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" letter-spacing="24" fill="currentColor" font-weight="400">AGENCY</text>
-          </svg>
+  <main>
+    <!-- CREATORS / CASE STUDIES SECTION -->
+    <section id="creators" class="creators-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-badge">PROVEN TRACK RECORD</span>
+          <h2>Verified Earnings & Roster Application</h2>
+          <p>See real results from our creators and step into a partnership built for your financial freedom.</p>
         </div>
 
-        <span class="inline-block px-5 py-2 rounded-full bg-rose-100 text-rose-600 text-xs tracking-widest uppercase font-bold mb-6 border border-rose-200">
-          Premier OnlyFans Management & Representation
-        </span>
+        <!-- Case Studies / Gallery Wrapper -->
+        <div class="proof-gallery-wrapper">
+          <div class="gallery-title-bar text-center mb-4">
+            <span class="badge-accent">VERIFIED REVENUE CASE STUDIES</span>
+            <h3>Creator Earnings Case Studies</h3>
+          </div>
 
-        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal text-stone-900 leading-[1.1] mb-6">
-          Welcome to <span class="italic text-rose-500 font-medium">Étoile Noire</span>
-        </h1>
+          <!-- Screenshot Carousel -->
+          <div class="carousel-container text-center">
+            <div class="carousel-slide mb-3">
+              <p class="slide-indicator text-muted mb-2">Case Study 1 of 6</p>
+              <div class="image-wrapper mb-2">
+                <img src="path/to/screenshot-1.jpg" alt="Creator Earnings Case Study Screenshot" class="img-fluid rounded shadow-sm" />
+              </div>
+              <button type="button" class="btn btn-outline-secondary btn-sm" onclick="enlargeImage()">Enlarge 🔍</button>
+            </div>
 
-        <p class="text-stone-600 text-base sm:text-lg font-normal leading-relaxed mb-10 max-w-2xl">
-          Building your brand doesn't have to feel lonely, exhausting, or overwhelming. Step into a sanctuary created to revolutionize the industry.
-        </p>
+            <div class="carousel-controls d-flex justify-content-center align-items-center gap-2 mb-2">
+              <button type="button" class="btn btn-light" id="prev-btn">&larr; Prev</button>
+              <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button type="button" class="btn btn-light" id="next-btn">Next &rarr;</button>
+            </div>
+            <p class="caption text-muted">Click image or control arrows to view screenshots 1 to 6.</p>
+          </div>
 
-        <!-- Navigation Links to Secondary Pages -->
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-3xl mb-12">
-          <a href="#about" class="p-6 bg-white rounded-2xl border border-rose-200 hover:border-rose-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
-            <h3 class="font-serif text-xl font-semibold text-stone-900 mb-1">About Us</h3>
-            <p class="text-xs text-stone-500">Our ethos & sanctuary</p>
-          </a>
-          <a href="#services" class="p-6 bg-white rounded-2xl border border-rose-200 hover:border-rose-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
-            <h3 class="font-serif text-xl font-semibold text-stone-900 mb-1">Services</h3>
-            <p class="text-xs text-stone-500">Free Audit & Management</p>
-          </a>
-          <a href="#creators" class="p-6 bg-white rounded-2xl border border-rose-200 hover:border-rose-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
-            <h3 class="font-serif text-xl font-semibold text-stone-900 mb-1">Creators</h3>
-            <p class="text-xs text-stone-500">Apply for roster</p>
-          </a>
-          <a href="#careers" class="p-6 bg-white rounded-2xl border border-rose-200 hover:border-rose-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center">
-            <h3 class="font-serif text-xl font-semibold text-stone-900 mb-1">Careers</h3>
-            <p class="text-xs text-stone-500">Join our team</p>
-          </a>
+          <!-- Video Section -->
+          <div class="video-proof-container mt-5 text-center">
+            <h3 class="mb-3">Creator Case Study Video</h3>
+            <div class="video-wrapper mb-2">
+              <video controls width="100%" class="rounded shadow-sm">
+                <source src="path/to/creator-earnings-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p class="text-muted">Watch a video walkthrough of creator earnings.</p>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- PAGE 2: ABOUT US -->
-    <section id="about" class="page-section hidden min-h-[calc(100vh-90px)] max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-5">
-          <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Our Story & Ethos</span>
-          <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-6 leading-tight">
-            A sanctuary built for your peace of mind.
-          </h2>
+        <!-- Application Form -->
+        <div class="application-form-wrapper mt-5">
+          <h2 class="text-center mb-4">Apply for Roster / Free Audit</h2>
+          <p class="text-center mb-4">We only accept limited creators per month to maintain tailored, high-touch strategy for every roster member.</p>
           
-          <p class="text-stone-600 text-sm leading-relaxed mb-6">
-            We know that building your brand can sometimes feel lonely, exhausting, and overwhelming. Founded in 2019 and officially established in 2026, Étoile Noire Agency was created to change that story entirely and revolutionize the industry.
-          </p>
-
-          <div class="p-6 bg-rose-50 rounded-2xl border border-rose-200 mb-6">
-            <p class="text-stone-700 text-sm font-medium italic">
-              "We wanted to build more than a management team—we wanted to build a sanctuary where your ambition is nurtured, your boundaries are actually protected, and your peace of mind is never compromised."
-            </p>
-          </div>
-          
-          <div class="grid grid-cols-2 gap-4 text-center">
-            <div class="p-4 bg-white rounded-xl border border-rose-200">
-              <p class="font-serif text-3xl font-bold text-stone-900">90%</p>
-              <p class="text-[10px] font-bold uppercase tracking-widest text-rose-500 mt-1">Female-Led Team</p>
-            </div>
-            <div class="p-4 bg-white rounded-xl border border-rose-200">
-              <p class="font-serif text-3xl font-bold text-stone-900">10+</p>
-              <p class="text-[10px] font-bold uppercase tracking-widest text-rose-500 mt-1">Trusted Partners</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="lg:col-span-7 space-y-6 text-stone-600 leading-relaxed font-normal">
-          <div class="bg-white p-6 rounded-2xl border border-rose-200">
-            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-rose-500"></span> A Sanctuary Built by Women
-            </h3>
-            <p class="text-sm">With a 90% female-led team, we truly understand your world, your challenges, and your dreams. We offer a safe, empathetic space where you are seen, heard, and supported.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl border border-rose-200">
-            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-rose-500"></span> Uncompromising Autonomy
-            </h3>
-            <p class="text-sm">You are a partner, never a product. With absolute creative control and permanent veto power, your comfort dictates every decision—your "no" is always respected, unconditionally.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl border border-rose-200">
-            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-rose-500"></span> We Carry the Weight Together
-            </h3>
-            <p class="text-sm">From 24/7 professional chatting and targeted marketing to leak protection and reliable accounting, we take the burnout out of the backend so you can actually enjoy your life and your art.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-2xl border border-rose-200">
-            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2 flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-rose-500"></span> A Legacy of True Reliability
-            </h3>
-            <p class="text-sm">Since the beginning of 2019, the 10+ creators we proudly partner with have trusted us with their careers because we show up with absolute transparency, punctual payouts, and unwavering loyalty through every season—and we think it's finally time to expand.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PAGE 3: SERVICES & AUDIT -->
-    <section id="services" class="page-section hidden min-h-[calc(100vh-90px)] max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Management & Free Strategy</span>
-        <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-4">How We Work Together</h2>
-        <p class="text-stone-600 font-normal">We take the burnout out of the backend so you can focus on creation while scaling your revenue.</p>
-      </div>
-
-      <!-- FREE AUDIT BREAKDOWN SECTION -->
-      <div class="bg-white p-8 md:p-12 rounded-3xl border border-rose-200 shadow-sm mb-12">
-        <div class="text-center max-w-xl mx-auto mb-8">
-          <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-rose-600 text-xs tracking-widest uppercase font-bold mb-3">Complimentary Service</span>
-          <h3 class="font-serif text-3xl font-semibold text-stone-900">The Free Audit Process</h3>
-          <p class="text-xs text-stone-500 mt-2">Discover your exact path to growth before making any commitment.</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
-          <div class="p-6 bg-softbg rounded-2xl border border-rose-100">
-            <span class="text-xs font-bold text-rose-500 uppercase tracking-widest block mb-2">Day 1 & 2</span>
-            <h4 class="font-serif text-xl font-semibold text-stone-900 mb-3">Page Audit & Custom Strategy Development</h4>
-            <ul class="space-y-3 text-xs text-stone-600">
-              <li class="flex items-start gap-2">
-                <span class="text-rose-500 font-bold">•</span>
-                <span><strong>Deep-Dive Analysis:</strong> We carefully review your current page, content style, pricing structure, and promotional channels to identify growth bottlenecks and untapped revenue.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-rose-500 font-bold">•</span>
-                <span><strong>Tailored Blueprint:</strong> We design a customized, step-by-step strategy focused on scaling your subscriber base, increasing engagement, and optimizing your daily workflow.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="p-6 bg-softbg rounded-2xl border border-rose-100">
-            <span class="text-xs font-bold text-rose-500 uppercase tracking-widest block mb-2">Day 3</span>
-            <h4 class="font-serif text-xl font-semibold text-stone-900 mb-3">The Free Strategy Session (30–45 Minutes)</h4>
-            <ul class="space-y-3 text-xs text-stone-600">
-              <li class="flex items-start gap-2">
-                <span class="text-rose-500 font-bold">•</span>
-                <span><strong>Flexible Format:</strong> We connect however you're most comfortable—choose between a video call, a voice call, or a back-and-forth text conversation.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-rose-500 font-bold">•</span>
-                <span><strong>The Walkthrough:</strong> We break down our findings and present the exact roadmap built specifically for your page, with zero pressure or sales pitches.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="border-t border-rose-100 pt-6">
-          <h4 class="font-serif text-lg font-semibold text-stone-900 mb-4 text-center">Your Options After the Strategy Call</h4>
-          <div class="grid sm:grid-cols-3 gap-4 text-center text-xs">
-            <div class="p-4 bg-white rounded-xl border border-rose-200">
-              <strong class="text-stone-900 block mb-1">Join the Agency</strong>
-              <p class="text-stone-500">Partner with us to let our team handle execution, marketing, and heavy lifting.</p>
-            </div>
-            <div class="p-4 bg-white rounded-xl border border-rose-200">
-              <strong class="text-stone-900 block mb-1">Stay Independent</strong>
-              <p class="text-stone-500">Walk away with your custom strategy blueprint and implement it entirely on your own.</p>
-            </div>
-            <div class="p-4 bg-white rounded-xl border border-rose-200">
-              <strong class="text-stone-900 block mb-1">Book More Sessions</strong>
-              <p class="text-stone-500">Purchase additional consulting hours for ongoing, hands-on guidance.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- FULL SERVICES GRID -->
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
-          <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">01</div>
-          <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">24/7 Chatting & Sales</h3>
-          <p class="text-stone-600 text-sm leading-relaxed">Our elite, empathetic chatting team works around the clock to sell high-ticket PPV content, build subscriber loyalty, and maximize tips while protecting your boundaries.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
-          <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">02</div>
-          <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Targeted Marketing</h3>
-          <p class="text-stone-600 text-sm leading-relaxed">Dedicated marketing teams driving consistent, paying subscribers to your page across TikTok, Instagram Reels, and Reddit through tailored viral campaigns.</p>
-        </div>
-
-        <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
-          <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">03</div>
-          <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Leak Protection & Accounting</h3>
-          <p class="text-stone-600 text-sm leading-relaxed">Comprehensive copyright protection, leak removal, clear accounting, and punctual payouts to ensure complete financial and personal security.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PAGE 4: CREATORS WITH FLOATING PROOF GALLERY AND VIDEO -->
-    <section id="creators" class="page-section hidden min-h-[calc(100vh-90px)] max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Proven Track Record</span>
-        <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-3">Verified Earnings & Roster Application</h2>
-        <p class="text-stone-600 font-normal text-sm">See real results from our creators and step into a partnership built for your financial freedom.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-12 gap-10 items-start">
-        
-        <!-- Left Column: Floating Animated Proof Gallery -->
-        <div class="lg:col-span-5 flex flex-col items-center">
-          <div class="animate-float w-full max-w-md bg-white rounded-3xl p-5 border border-rose-200 shadow-2xl shadow-rose-200/50 relative group">
-            
-            <!-- Floating Badge -->
-            <div class="absolute -top-3 right-6 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow z-10">
-              Verified Revenue Proof
+          <form id="roster-application-form">
+            <div class="form-group mb-3">
+              <label for="stage-name" class="form-label">NAME OR STAGE NAME *</label>
+              <input type="text" id="stage-name" class="form-control" required />
             </div>
 
-            <div class="mb-3 flex items-center justify-between border-b border-rose-100 pb-3">
-              <div>
-                <h4 class="font-serif text-lg font-bold text-stone-900">Creator Earnings Proof</h4>
-                <p id="proof-label" class="text-[11px] text-stone-500">Proof 1 of 6</p>
-              </div>
-              <button onclick="openLightbox()" class="text-xs font-semibold text-rose-500 bg-rose-50 px-2.5 py-1 rounded-md border border-rose-200 hover:bg-rose-100 transition">Enlarge 🔍</button>
+            <div class="form-group mb-3">
+              <label for="social-handle" class="form-label">INSTAGRAM / TIKTOK HANDLE *</label>
+              <input type="text" id="social-handle" class="form-control" placeholder="@handle" required />
             </div>
 
-            <!-- Screenshot Thumbnail Container -->
-            <div class="overflow-hidden rounded-xl border border-stone-200 bg-stone-50 relative group cursor-pointer" onclick="openLightbox()">
-              <img id="active-screenshot" src="screenshot1.jpg" alt="Creator Earnings Screenshot" class="w-full h-64 object-cover object-top transform group-hover:scale-105 transition duration-500">
-              <div class="absolute inset-0 bg-rose-900/10 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                <span class="bg-white/90 backdrop-blur-sm text-stone-900 text-xs font-bold px-4 py-2 rounded-full shadow-lg">View Full Image</span>
-              </div>
-            </div>
-
-            <!-- Gallery Carousel Controls -->
-            <div class="mt-4 pt-3 border-t border-rose-100 flex justify-between items-center text-xs">
-              <button onclick="prevImage()" class="bg-rose-50 hover:bg-rose-100 text-rose-600 px-3 py-1.5 rounded-lg border border-rose-200 font-bold transition">← Prev</button>
-              
-              <div class="flex gap-1.5" id="gallery-dots">
-                <span onclick="setImage(0)" class="w-2.5 h-2.5 rounded-full bg-rose-500 cursor-pointer"></span>
-                <span onclick="setImage(1)" class="w-2.5 h-2.5 rounded-full bg-rose-200 cursor-pointer"></span>
-                <span onclick="setImage(2)" class="w-2.5 h-2.5 rounded-full bg-rose-200 cursor-pointer"></span>
-                <span onclick="setImage(3)" class="w-2.5 h-2.5 rounded-full bg-rose-200 cursor-pointer"></span>
-                <span onclick="setImage(4)" class="w-2.5 h-2.5 rounded-full bg-rose-200 cursor-pointer"></span>
-                <span onclick="setImage(5)" class="w-2.5 h-2.5 rounded-full bg-rose-200 cursor-pointer"></span>
-              </div>
-
-              <button onclick="nextImage()" class="bg-rose-50 hover:bg-rose-100 text-rose-600 px-3 py-1.5 rounded-lg border border-rose-200 font-bold transition">Next →</button>
-            </div>
-          </div>
-          
-          <p class="text-xs text-stone-400 mt-4 text-center mb-8">Click image or control arrows to view screenshots 1 to 6.</p>
-          
-          <!-- Proof Video Section -->
-          <div class="w-full max-w-md bg-white rounded-3xl p-5 border border-rose-200 shadow-xl shadow-rose-100/30">
-              <h4 class="font-serif text-lg font-bold text-stone-900 mb-4 border-b border-rose-100 pb-3">Creator Proof Video</h4>
-              <div class="overflow-hidden rounded-xl border border-stone-200 bg-stone-50">
-                  <video controls class="w-full h-auto">
-                      <source src="EarningsVideo1.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-              </div>
-              <p class="text-[11px] text-stone-500 mt-3 text-center">Watch a video walkthrough of creator earnings.</p>
-          </div>
-        </div>
-
-        <!-- Right Column: Application Form -->
-        <div class="lg:col-span-7">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/30">
-            <h3 class="font-serif text-2xl font-bold text-stone-900 mb-2">Apply for Roster / Free Audit</h3>
-            <p class="text-stone-500 text-xs mb-6">We only accept limited creators per month to maintain tailored, high-touch strategy for every roster member.</p>
-
-            <form action="https://formspree.io/f/YOUR_CREATOR_FORM_ID" method="POST" class="space-y-5">
-              <div class="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Name or Stage Name</label>
-                  <input type="text" name="creator_name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-                </div>
-                <div>
-                  <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Instagram / TikTok Handle</label>
-                  <input type="text" name="creator_socials" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="@handle">
-                </div>
-              </div>
-
-              <div class="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Current Monthly Revenue</label>
-                  <select name="creator_revenue" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-                    <option>$0 - Just Starting</option>
-                    <option>$1,000 - $5,000 / mo</option>
-                    <option>$5,000 - $15,000 / mo</option>
-                    <option>$15,000+ / mo</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Email Address</label>
-                  <input type="email" name="creator_email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Tell Us About Your Goals</label>
-                <textarea name="creator_goals" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="What are your current struggles and what level of income are you looking to reach?"></textarea>
-              </div>
-
-              <button type="submit" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-300/50">
-                Submit Creator Application
-              </button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PAGE 5: CAREERS -->
-    <section id="careers" class="page-section hidden min-h-[calc(100vh-90px)] max-w-4xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
-      <div class="bg-white p-10 md:p-14 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/50">
-        <div class="text-center max-w-xl mx-auto mb-10">
-          <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">We Are Hiring</span>
-          <h2 class="font-serif text-4xl font-normal text-stone-900 mb-3">Join Our Agency Team</h2>
-          <p class="text-stone-600 font-normal text-sm">We are expanding our female-led team and looking for empathetic, dedicated professionals. Select your position below.</p>
-        </div>
-
-        <form action="https://formspree.io/f/YOUR_CAREERS_FORM_ID" method="POST" class="space-y-6">
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Full Name</label>
-              <input type="text" name="applicant_name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-            </div>
-            <div>
-              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Email Address</label>
-              <input type="email" name="applicant_email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Desired Position</label>
-              <select name="applicant_role" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-                <option>Account Chatter</option>
-                <option>Video Editor / Content Creator</option>
-                <option>Team Manager / Account Manager</option>
-                <option>Social Media Marketer (TikTok / IG / Reddit)</option>
-                <option>Other / General Application</option>
+            <div class="form-group mb-3">
+              <label for="monthly-revenue" class="form-label">CURRENT MONTHLY REVENUE *</label>
+              <select id="monthly-revenue" class="form-select" required>
+                <option value="0">$0 - Just Starting</option>
+                <option value="1k-5k">$1,000 - $5,000 / mo</option>
+                <option value="5k-15k">$5,000 - $15,000 / mo</option>
+                <option value="15k+">$15,000+ / mo</option>
               </select>
             </div>
-            <div>
-              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Years of Experience</label>
-              <select name="applicant_experience" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-                <option>No prior experience (Fast learner)</option>
-                <option>1 - 12 Months Experience</option>
-                <option>1 - 3 Years Experience</option>
-                <option>3+ Years Experience</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Portfolio / Work Link (Optional)</label>
-              <input type="url" name="applicant_portfolio" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="https://drive.google.com/...">
+            <div class="form-group mb-3">
+              <label for="email" class="form-label">EMAIL ADDRESS *</label>
+              <input type="email" id="email" class="form-control" required />
             </div>
-            <div>
-              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Shift / Time Availability</label>
-              <select name="applicant_availability" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-                <option>Full-Time</option>
-                <option>Part-Time / Project Based</option>
-                <option>Flexible / Night Shifts</option>
-              </select>
+
+            <div class="form-group mb-4">
+              <label for="goals" class="form-label">TELL US ABOUT YOUR GOALS *</label>
+              <textarea id="goals" class="form-control" rows="4" placeholder="What are your current struggles and what level of income are you looking to reach?" required></textarea>
             </div>
-          </div>
 
-          <div>
-            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Why Are You a Good Fit?</label>
-            <textarea name="applicant_bio" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="Tell us about your relevant skill sets, past agency work, or software proficiency..."></textarea>
-          </div>
-
-          <button type="submit" class="w-full bg-stone-900 hover:bg-rose-500 text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-md">
-            Submit Team Application
-          </button>
-        </form>
+            <button type="submit" class="btn btn-primary w-100">SUBMIT CREATOR APPLICATION</button>
+          </form>
+        </div>
       </div>
     </section>
-
   </main>
 
-  <!-- LIGHTBOX MODAL FOR FULL SCREEN VIEWING -->
-  <div id="lightbox" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
-    <div class="relative max-w-4xl w-full bg-white rounded-2xl p-2 shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
-      <button onclick="closeLightbox()" class="absolute top-4 right-4 bg-stone-900 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold hover:bg-rose-500 transition z-10">✕</button>
-      <img id="lightbox-img" src="screenshot1.jpg" alt="Earnings Proof" class="w-full h-auto rounded-xl max-h-[85vh] object-contain">
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-white border-t border-rose-200 py-8 text-center text-xs text-stone-500 tracking-wider mt-auto">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="flex items-center gap-2">
-        <svg class="h-8 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
-          <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
-          <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
-          <circle cx="460" cy="620" r="12" fill="currentColor"/>
-          <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
-          <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
-          <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
-          <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
-        </svg>
-        <span class="font-serif text-base tracking-widest text-stone-900 font-bold">ÉTOILE NOIRE</span>
-      </div>
-      <div>&copy; 2026 Étoile Noire Agency. All rights reserved.</div>
-      <div class="flex gap-6">
-        <a href="#welcome" class="hover:text-rose-500 transition">Welcome</a>
-        <a href="#about" class="hover:text-rose-500 transition">About</a>
-        <a href="#services" class="hover:text-rose-500 transition">Services</a>
-        <a href="#creators" class="hover:text-rose-500 transition">Creators</a>
-        <a href="#careers" class="hover:text-rose-500 transition">Careers</a>
-      </div>
+  <!-- FOOTER -->
+  <footer class="footer py-4 text-center">
+    <div class="container">
+      <p class="mb-2"><strong>ÉTOILE NOIRE</strong> &copy; 2026 Étoile Noire Agency. All rights reserved.</p>
+      <nav class="footer-links d-flex justify-content-center gap-3">
+        <a href="#welcome">Welcome</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#creators">Creators</a>
+        <a href="#careers">Careers</a>
+      </nav>
     </div>
   </footer>
-
-  <!-- Scripts for Navigation, Carousel, and Lightbox -->
-  <script>
-    // SPA Routing
-    function handleRouting() {
-      const hash = window.location.hash || '#welcome';
-      const pages = document.querySelectorAll('.page-section');
-      
-      pages.forEach(page => {
-        if ('#' + page.id === hash) {
-          page.classList.remove('hidden');
-        } else {
-          page.classList.add('hidden');
-        }
-      });
-
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Screenshot Carousel Logic (Configured for .jpg files)
-    const screenshots = [
-      'screenshot1.jpg',
-      'screenshot2.jpg',
-      'screenshot3.jpg',
-      'screenshot4.jpg',
-      'screenshot5.jpg',
-      'screenshot6.jpg'
-    ];
-    let currentIndex = 0;
-
-    function updateGallery() {
-      const imgElem = document.getElementById('active-screenshot');
-      const labelElem = document.getElementById('proof-label');
-      const dots = document.querySelectorAll('#gallery-dots span');
-
-      imgElem.src = screenshots[currentIndex];
-      labelElem.textContent = `Proof ${currentIndex + 1} of ${screenshots.length}`;
-
-      dots.forEach((dot, idx) => {
-        if (idx === currentIndex) {
-          dot.className = 'w-2.5 h-2.5 rounded-full bg-rose-500 cursor-pointer';
-        } else {
-          dot.className = 'w-2.5 h-2.5 rounded-full bg-rose-200 cursor-pointer';
-        }
-      });
-    }
-
-    function setImage(index) {
-      currentIndex = index;
-      updateGallery();
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % screenshots.length;
-      updateGallery();
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + screenshots.length) % screenshots.length;
-      updateGallery();
-    }
-
-    // Lightbox Logic
-    function openLightbox() {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      lightboxImg.src = screenshots[currentIndex];
-      lightbox.classList.remove('hidden');
-      lightbox.classList.add('flex');
-    }
-
-    function closeLightbox() {
-      const lightbox = document.getElementById('lightbox');
-      lightbox.classList.add('hidden');
-      lightbox.classList.remove('flex');
-    }
-
-    window.addEventListener('hashchange', handleRouting);
-    window.addEventListener('DOMContentLoaded', handleRouting);
-  </script>
 
 </body>
 </html>
