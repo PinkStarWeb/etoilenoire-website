@@ -35,40 +35,48 @@
 </head>
 <body class="bg-softbg text-stone-800 font-sans antialiased selection:bg-rose-300 selection:text-white">
 
-  <!-- Header / Navigation -->
+  <!-- Navigation -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-rose-200">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
-      <a href="#" class="flex items-center gap-3">
-        <!-- SVG Monogram / Logo -->
+      <a href="#home" class="flex items-center gap-3">
+        <!-- Precise Monogram Logo SVG -->
         <svg class="w-10 h-10 text-stone-900" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-          <path d="M 22 18 L 22 82 M 22 18 L 58 18 M 22 50 L 52 50" stroke-width="4.5" stroke-linecap="square"/>
-          <path d="M 40 82 L 78 18 M 78 18 L 78 82" stroke-width="4.5" stroke-linecap="square"/>
-          <!-- Star Accent -->
-          <path d="M 78 28 L 78 10 M 69 19 L 87 19" stroke-width="2.5"/>
+          <!-- Main E/N Monogram Structure -->
+          <path d="M 30 20 L 30 80 M 30 20 L 58 20 M 30 50 L 52 50" stroke-width="3.5" stroke-linecap="square"/>
+          <path d="M 42 80 L 72 20 M 72 20 L 72 80" stroke-width="3.5" stroke-linecap="square"/>
+          <!-- Curved Serifs & Details -->
+          <path d="M 30 35 C 45 35, 55 42, 55 58 C 55 70, 45 78, 30 78" stroke-width="2.5" fill="none"/>
+          <!-- Four-Point Star Accent on N -->
+          <path d="M 72 32 L 72 12 M 62 22 L 82 22" stroke-width="2"/>
         </svg>
         <div class="flex flex-col leading-none">
-          <span class="font-serif text-xl tracking-[0.25em] font-medium text-stone-900">ÉTOILÉ NOIRE</span>
+          <span class="font-serif text-xl tracking-[0.25em] font-medium text-stone-900">ÉTOILE NOIRE</span>
           <span class="text-[9px] tracking-[0.35em] text-rose-500 font-bold uppercase mt-1">A G E N C Y</span>
         </div>
       </a>
       
-      <nav class="hidden md:flex items-center space-x-8 text-xs tracking-widest font-semibold uppercase text-stone-600">
+      <nav class="hidden md:flex items-center space-x-7 text-xs tracking-widest font-semibold uppercase text-stone-600">
+        <a href="#about" class="hover:text-rose-500 transition">About Us</a>
         <a href="#services" class="hover:text-rose-500 transition">Services</a>
-        <a href="#results" class="hover:text-rose-500 transition">Results</a>
-        <a href="#process" class="hover:text-rose-500 transition">Process</a>
-        <a href="#faq" class="hover:text-rose-500 transition">FAQ</a>
+        <a href="#creator-apply" class="hover:text-rose-500 transition">Creators</a>
+        <a href="#chatter-apply" class="hover:text-rose-500 transition">Careers</a>
       </nav>
 
-      <a href="#apply" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-200">
-        Apply Now
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="#chatter-apply" class="hidden sm:inline-block border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
+          Apply as Chatter
+        </a>
+        <a href="#creator-apply" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-200">
+          Creator Application
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 grid md:grid-cols-2 gap-12 items-center">
+  <section id="home" class="relative max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 grid md:grid-cols-2 gap-12 items-center">
     <div>
-      <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-rose-600 text-xs tracking-widest uppercase font-bold mb-6 border border-rose-200">OnlyFans Management & Scaling</span>
+      <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-rose-600 text-xs tracking-widest uppercase font-bold mb-6 border border-rose-200">Operating Since 2019 • Est. 2026</span>
       <h1 class="font-serif text-5xl lg:text-6xl font-normal text-stone-900 leading-[1.12] mb-6">
         Turn your content into a <span class="italic text-rose-500">7-figure</span> empire.
       </h1>
@@ -76,24 +84,24 @@
         We handle 24/7 chatting, viral marketing, fan retention, and account management so you can focus entirely on content creation.
       </p>
       <div class="flex flex-wrap items-center gap-4">
-        <a href="#apply" class="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-lg shadow-rose-300/50">
-          Apply for Management
+        <a href="#creator-apply" class="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-lg shadow-rose-300/50">
+          Apply for Representation
         </a>
-        <a href="#results" class="border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
-          View Creator Earnings
+        <a href="#about" class="border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
+          Our Philosophy
         </a>
       </div>
     </div>
 
-    <!-- Visual Hero Image Container -->
+    <!-- Visual Hero Image Container (Laughing Women Taking Selfies) -->
     <div class="relative">
       <div class="absolute -inset-3 bg-rose-200/50 rounded-3xl -rotate-1 -z-10 blur-sm"></div>
       <div class="bg-white p-3 rounded-2xl shadow-xl border border-rose-200">
         <div class="aspect-[4/3] bg-stone-100 rounded-xl overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" alt="Creator Studio" class="object-cover w-full h-full">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80" alt="Laughing friends taking a selfie" class="object-cover w-full h-full">
           <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-rose-100 shadow-md">
-            <p class="text-xs font-bold uppercase text-rose-500 tracking-wider">Average Creator Growth</p>
-            <p class="font-serif text-2xl font-bold text-stone-900">+340% Revenue Increase <span class="text-xs font-sans text-stone-500 font-normal">in 90 Days</span></p>
+            <p class="text-xs font-bold uppercase text-rose-500 tracking-wider">Proven Track Record</p>
+            <p class="font-serif text-2xl font-bold text-stone-900">$7,000,000+ <span class="text-xs font-sans text-stone-500 font-normal">Generated for Creators</span></p>
           </div>
         </div>
       </div>
@@ -101,84 +109,125 @@
   </section>
 
   <!-- Key Metrics / Proof -->
-  <section id="results" class="bg-white py-14 border-y border-rose-200">
+  <section class="bg-white py-14 border-y border-rose-200">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">$2.4M+</p>
+          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">$7M+</p>
           <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Generated for Creators</p>
         </div>
         <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">24/7</p>
-          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Active Chat Management</p>
+          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">2019</p>
+          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Operating Experience</p>
         </div>
         <div>
           <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">Top 0.1%</p>
-
           <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Creator Account Placements</p>
         </div>
         <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">10M+</p>
-          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Monthly Organic Views</p>
+          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">Rapid</p>
+          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Continuous Growth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="max-w-7xl mx-auto px-6 lg:px-8 py-24">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-5">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Who We Are</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-6 leading-tight">
+          Treating creators as partners, never commodities.
+        </h2>
+        <div class="p-6 bg-rose-50 rounded-2xl border border-rose-200">
+          <p class="text-stone-700 text-sm font-medium italic">
+            "Officially established in 2026, but already operating since 2019, we provide elite, end-to-end management built on a foundation of absolute discretion, safety, and sustainable growth."
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 space-y-6 text-stone-600 leading-relaxed font-normal">
+        <p>
+          In a rapidly evolving industry, our multi-year track record reflects our unwavering commitment to our creators' long-term success, financial security, and personal well-being. Our founders have been in the industry for years and find it has always treated models as commodities—<strong class="text-rose-600 font-semibold">NOT here!</strong>
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 pt-4">
+          <div class="bg-white p-6 rounded-xl border border-rose-200">
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Uncompromising Safety & Control</h3>
+            <p class="text-sm">Your boundaries and autonomy are non-negotiable. You retain complete creative control and veto power over all content, promotions, and brand direction, ensuring your comfort and privacy are always protected.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-rose-200">
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Strategic Growth & Excellence</h3>
+            <p class="text-sm">We handle the complexities of scaling! Including 24/7 professional subscriber engagement, advanced marketing funnels, and meticulous account management, allowing you to focus entirely on your content and your life.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-rose-200">
+          <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">A Proven Track Record of Reliability</h3>
+          <p class="text-sm">From transparent reporting to punctual, dependable payouts, our partnership is defined by institutional integrity. When you join our roster, you are supported by a seasoned team dedicated to elevating your brand while safeguarding your peace of mind. Let’s build your wealth together.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="max-w-7xl mx-auto px-6 lg:px-8 py-24">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Full Service Management</span>
-      <h2 class="font-serif text-4xl font-normal text-stone-900 mb-4">How We Scale Your Account</h2>
-      <p class="text-stone-600 font-normal">We handle the grueling backend work so you can maintain full privacy, create content, and enjoy your freedom.</p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
-        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">01</div>
-        <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">24/7 Chatters & PPV Sales</h3>
-        <p class="text-stone-600 text-sm leading-relaxed">Our elite, native-English chatting team works in shift rotations to sell high-ticket PPV content, build subscriber loyalty, and maximize tips around the clock.</p>
+  <section id="services" class="bg-white py-24 border-t border-rose-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Full Service Management</span>
+        <h2 class="font-serif text-4xl font-normal text-stone-900 mb-4">How We Scale Your Account</h2>
+        <p class="text-stone-600 font-normal">We handle the grueling backend work so you can maintain full privacy, create content, and enjoy your freedom.</p>
       </div>
 
-      <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
-        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">02</div>
-        <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Viral Organic Marketing</h3>
-        <p class="text-stone-600 text-sm leading-relaxed">Dedicated TikTok, Instagram Reels, and Reddit growth teams that drive thousands of targeted, paying subscribers to your page daily.</p>
-      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-softbg p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
+          <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">01</div>
+          <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">24/7 Chatters & PPV Sales</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Our elite, native-English chatting team works in shift rotations to sell high-ticket PPV content, build subscriber loyalty, and maximize tips around the clock.</p>
+        </div>
 
-      <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
-        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">03</div>
-        <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Brand Strategy & Protection</h3>
-        <p class="text-stone-600 text-sm leading-relaxed">Content leaks management, copyright takedowns, custom pricing strategies, and full audit protection for complete peace of mind.</p>
+        <div class="bg-softbg p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
+          <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">02</div>
+          <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Viral Organic Marketing</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Dedicated marketing team that drives thousands of targeted, paying subscribers to your page daily across TikTok, Instagram Reels, and Reddit.</p>
+        </div>
+
+        <div class="bg-softbg p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
+          <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">03</div>
+          <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Brand Strategy & Protection</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Content leaks management, copyright takedowns, custom pricing strategies, and full audit protection for complete peace of mind.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Application Form Section -->
-  <section id="apply" class="max-w-4xl mx-auto px-6 lg:px-8 py-20">
+  <!-- Creator Application Section -->
+  <section id="creator-apply" class="max-w-4xl mx-auto px-6 lg:px-8 py-20">
     <div class="bg-white p-10 md:p-14 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/50">
       <div class="text-center max-w-xl mx-auto mb-10">
         <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Exclusive Roster</span>
-        <h2 class="font-serif text-4xl font-normal text-stone-900 mb-3">Apply for Representation</h2>
-        <p class="text-stone-600 font-normal text-sm">We only accept 3 new creators per month to maintain tailored, high-touch strategy for every roster member.</p>
+        <h2 class="font-serif text-4xl font-normal text-stone-900 mb-3">Creator Representation</h2>
+        <p class="text-stone-600 font-normal text-sm">We only accept limited creators per month to maintain tailored, high-touch strategy for every roster member.</p>
       </div>
 
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+      <form action="https://formspree.io/f/YOUR_CREATOR_FORM_ID" method="POST" class="space-y-6">
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Name or Stage Name</label>
-            <input type="text" name="name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            <input type="text" name="creator_name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
           </div>
           <div>
             <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Instagram / TikTok Handle</label>
-            <input type="text" name="socials" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="@handle">
+            <input type="text" name="creator_socials" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="@handle">
           </div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Current Monthly Revenue</label>
-            <select name="revenue" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            <select name="creator_revenue" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
               <option>$0 - Just Starting</option>
               <option>$1,000 - $5,000 / mo</option>
               <option>$5,000 - $15,000 / mo</option>
@@ -187,19 +236,74 @@
           </div>
           <div>
             <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Email Address</label>
-            <input type="email" name="email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            <input type="email" name="creator_email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
           </div>
         </div>
 
         <div>
           <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Tell Us About Your Goals</label>
-          <textarea name="goals" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="What are your current struggles and what level of income are you looking to reach?"></textarea>
+          <textarea name="creator_goals" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="What are your current struggles and what level of income are you looking to reach?"></textarea>
         </div>
 
         <button type="submit" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-300/50">
-          Submit Confidential Application
+          Submit Creator Application
         </button>
       </form>
+    </div>
+  </section>
+
+  <!-- Chatter Careers / Application Section -->
+  <section id="chatter-apply" class="bg-rose-50 py-20 border-t border-rose-200">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="bg-white p-10 md:p-14 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/50">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">We Are Hiring</span>
+          <h2 class="font-serif text-4xl font-normal text-stone-900 mb-3">Chatter Application</h2>
+          <p class="text-stone-600 font-normal text-sm">Join our elite 24/7 subscriber engagement team. We offer competitive pay, commission incentives, and flexible shift schedules.</p>
+        </div>
+
+        <form action="https://formspree.io/f/YOUR_CHATTER_FORM_ID" method="POST" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Full Name</label>
+              <input type="text" name="chatter_name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Email Address</label>
+              <input type="email" name="chatter_email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Chatting Experience</label>
+              <select name="chatter_experience" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+                <option>No prior experience (Fast learner)</option>
+                <option>1 - 12 Months Experience</option>
+                <option>1 - 3 Years Experience</option>
+                <option>3+ Years Experience</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Shift Availability</label>
+              <select name="chatter_availability" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+                <option>Full-Time (8 Hour Shifts)</option>
+                <option>Part-Time / Weekends</option>
+                <option>Flexible / Night Shifts</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Why Are You a Good Fit?</label>
+            <textarea name="chatter_bio" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="Briefly describe your communication skills and past experience..."></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-stone-900 hover:bg-rose-500 text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-md">
+            Submit Chatter Application
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -208,16 +312,17 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex items-center gap-2">
         <svg class="w-6 h-6 text-stone-900" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-          <path d="M 22 18 L 22 82 M 22 18 L 58 18 M 22 50 L 52 50" stroke-width="5"/>
-          <path d="M 40 82 L 78 18 M 78 18 L 78 82" stroke-width="5"/>
-          <path d="M 78 28 L 78 10 M 69 19 L 87 19" stroke-width="3"/>
+          <path d="M 30 20 L 30 80 M 30 20 L 58 20 M 30 50 L 52 50" stroke-width="4"/>
+          <path d="M 42 80 L 72 20 M 72 20 L 72 80" stroke-width="4"/>
+          <path d="M 72 32 L 72 12 M 62 22 L 82 22" stroke-width="2.5"/>
         </svg>
         <span class="font-serif text-base tracking-widest text-stone-900 font-bold">ÉTOILÉ NOIRE</span>
       </div>
       <div>&copy; 2026 Étoile Noire Agency. All rights reserved.</div>
       <div class="flex gap-6">
-        <a href="#" class="hover:text-rose-500 transition">Privacy Policy</a>
-        <a href="#" class="hover:text-rose-500 transition">Terms & Conditions</a>
+        <a href="#about" class="hover:text-rose-500 transition">About</a>
+        <a href="#creator-apply" class="hover:text-rose-500 transition">Creators</a>
+        <a href="#chatter-apply" class="hover:text-rose-500 transition">Chatter Jobs</a>
       </div>
     </div>
   </footer>
