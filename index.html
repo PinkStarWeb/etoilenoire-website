@@ -33,235 +33,233 @@
     }
   </script>
 </head>
-<body class="bg-softbg text-stone-800 font-sans antialiased selection:bg-rose-300 selection:text-white">
+<body class="bg-softbg text-stone-800 font-sans antialiased selection:bg-rose-300 selection:text-white min-h-screen flex flex-col">
 
   <!-- Navigation -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-rose-200">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-rose-200">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
       <a href="#home" class="flex items-center gap-3">
-        <!-- Exact Inline SVG recreating the Étoile Noire Logo -->
-        <svg class="h-10 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Main E stroke -->
+        <!-- Prominent, Larger Header Logo -->
+        <svg class="h-16 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
-          <!-- E middle crossbar -->
           <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
-          <!-- N left vertical stem -->
           <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
           <circle cx="460" cy="620" r="12" fill="currentColor"/>
-          <!-- N diagonal line -->
           <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
-          <!-- N right stem -->
           <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
-          <!-- Star on N stem -->
           <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
           <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
-          <!-- ÉTOILE NOIRE text -->
           <text x="500" y="740" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="82" letter-spacing="18" fill="currentColor" font-weight="500">ÉTOILE NOIRE</text>
-          <!-- AGENCY text -->
           <text x="500" y="810" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" letter-spacing="24" fill="currentColor" font-weight="400">AGENCY</text>
         </svg>
       </a>
       
-      <nav class="hidden md:flex items-center space-x-7 text-xs tracking-widest font-semibold uppercase text-stone-600">
+      <nav class="hidden md:flex items-center space-x-8 text-xs tracking-widest font-semibold uppercase text-stone-600">
+        <a href="#home" class="hover:text-rose-500 transition">Home</a>
         <a href="#about" class="hover:text-rose-500 transition">About Us</a>
         <a href="#services" class="hover:text-rose-500 transition">Services</a>
-        <a href="#creator-apply" class="hover:text-rose-500 transition">Creators</a>
-        <a href="#careers-apply" class="hover:text-rose-500 transition">Careers</a>
+        <a href="#creators" class="hover:text-rose-500 transition">Creators</a>
+        <a href="#careers" class="hover:text-rose-500 transition">Careers</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="#careers-apply" class="hidden sm:inline-block border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
+        <a href="#careers" class="hidden sm:inline-block border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
           Join Our Team
         </a>
-        <a href="#creator-apply" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-200">
-          Creator Application
+        <a href="#creators" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-200">
+          Apply Now
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="relative max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 grid md:grid-cols-2 gap-12 items-center">
-    <div>
-      <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-rose-600 text-xs tracking-widest uppercase font-bold mb-6 border border-rose-200">Operating Since 2019 • Est. 2026</span>
-      <h1 class="font-serif text-5xl lg:text-6xl font-normal text-stone-900 leading-[1.12] mb-6">
-        Turn your content into a <span class="italic text-rose-500">7-figure</span> empire.
-      </h1>
-      <p class="text-stone-600 text-base lg:text-lg font-normal leading-relaxed mb-8 max-w-lg">
-        We handle 24/7 chatting, viral marketing, fan retention, and account management so you can focus entirely on content creation.
-      </p>
-      <div class="flex flex-wrap items-center gap-4">
-        <a href="#creator-apply" class="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-lg shadow-rose-300/50">
-          Apply for Representation
-        </a>
-        <a href="#about" class="border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
-          Our Philosophy
-        </a>
-      </div>
-    </div>
-
-    <!-- Hero Image Container -->
-    <div class="relative">
-      <div class="absolute -inset-3 bg-rose-200/50 rounded-3xl -rotate-1 -z-10 blur-sm"></div>
-      <div class="bg-white p-3 rounded-2xl shadow-xl border border-rose-200">
-        <div class="aspect-[4/3] bg-stone-100 rounded-xl overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="Glamorous content creators" class="object-cover w-full h-full">
-          <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-rose-100 shadow-md">
-            <p class="text-xs font-bold uppercase text-rose-500 tracking-wider">Proven Track Record</p>
-            <p class="font-serif text-2xl font-bold text-stone-900">$7,000,000+ <span class="text-xs font-sans text-stone-500 font-normal">Generated for Creators</span></p>
+  <!-- Main Content Pages Container -->
+  <main class="flex-grow">
+    
+    <!-- PAGE 1: HOME -->
+    <section id="home" class="page-section min-h-[calc(100vh-80px)] max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <!-- Large Feature Logo -->
+          <div class="mb-8">
+            <svg class="h-32 lg:h-40 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
+              <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
+              <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
+              <circle cx="460" cy="620" r="12" fill="currentColor"/>
+              <path d="M 370 340 L 680 620" stroke="currentColor" stroke-width="28" stroke-linecap="square"/>
+              <path d="M 680 340 V 620" stroke="currentColor" stroke-width="16"/>
+              <path d="M 680 250 Q 680 310 740 310 Q 680 310 680 370 Q 680 310 620 310 Q 680 310 680 250 Z" fill="currentColor"/>
+              <path d="M 655 355 H 705" stroke="currentColor" stroke-width="14"/>
+              <text x="500" y="740" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="82" letter-spacing="18" fill="currentColor" font-weight="500">ÉTOILE NOIRE</text>
+              <text x="500" y="810" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" letter-spacing="24" fill="currentColor" font-weight="400">AGENCY</text>
+            </svg>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Key Metrics / Proof -->
-  <section class="bg-white py-14 border-y border-rose-200">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">$7M+</p>
-          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Generated for Creators</p>
-        </div>
-        <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">2019</p>
-          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Operating Experience</p>
-        </div>
-        <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">Top 0.1%</p>
-          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Creator Account Placements</p>
-        </div>
-        <div>
-          <p class="font-serif text-4xl lg:text-5xl font-semibold text-stone-900">Rapid</p>
-          <p class="text-xs font-bold uppercase tracking-widest text-rose-500 mt-2">Continuous Growth</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="max-w-7xl mx-auto px-6 lg:px-8 py-24">
-    <div class="grid lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-5">
-        <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Who We Are</span>
-        <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-6 leading-tight">
-          Treating creators as partners, never commodities.
-        </h2>
-        <div class="p-6 bg-rose-50 rounded-2xl border border-rose-200">
-          <p class="text-stone-700 text-sm font-medium italic">
-            "Officially established in 2026, but already operating since 2019, we provide elite, end-to-end management built on a foundation of absolute discretion, safety, and sustainable growth."
+          <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-rose-600 text-xs tracking-widest uppercase font-bold mb-6 border border-rose-200">Operating Since 2019 • Est. 2026</span>
+          <h1 class="font-serif text-5xl lg:text-6xl font-normal text-stone-900 leading-[1.12] mb-6">
+            Turn your content into a <span class="italic text-rose-500">7-figure</span> empire.
+          </h1>
+          <p class="text-stone-600 text-base lg:text-lg font-normal leading-relaxed mb-8 max-w-lg">
+            We handle 24/7 chatting, viral marketing, fan retention, and account management so you can focus entirely on content creation.
           </p>
-        </div>
-      </div>
-
-      <div class="lg:col-span-7 space-y-6 text-stone-600 leading-relaxed font-normal">
-        <p>
-          In a rapidly evolving industry, our multi-year track record reflects our unwavering commitment to our creators' long-term success, financial security, and personal well-being. Our founders have been in the industry for years and find it has always treated models as commodities—<strong class="text-rose-600 font-semibold">NOT here!</strong>
-        </p>
-
-        <div class="grid sm:grid-cols-2 gap-6 pt-4">
-          <div class="bg-white p-6 rounded-xl border border-rose-200">
-            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Uncompromising Safety & Control</h3>
-            <p class="text-sm">Your boundaries and autonomy are non-negotiable. You retain complete creative control and veto power over all content, promotions, and brand direction, ensuring your comfort and privacy are always protected.</p>
-          </div>
-
-          <div class="bg-white p-6 rounded-xl border border-rose-200">
-            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Strategic Growth & Excellence</h3>
-            <p class="text-sm">We handle the complexities of scaling! Including 24/7 professional subscriber engagement, advanced marketing funnels, and meticulous account management, allowing you to focus entirely on your content and your life.</p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#creators" class="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-lg shadow-rose-300/50">
+              Apply for Representation
+            </a>
+            <a href="#about" class="border border-rose-300 hover:border-rose-500 text-stone-800 bg-white px-8 py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300">
+              Our Philosophy
+            </a>
           </div>
         </div>
 
-        <div class="bg-white p-6 rounded-xl border border-rose-200">
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">A Proven Track Record of Reliability</h3>
-          <p class="text-sm">From transparent reporting to punctual, dependable payouts, our partnership is defined by institutional integrity. When you join our roster, you are supported by a seasoned team dedicated to elevating your brand while safeguarding your peace of mind. Let’s build your wealth together.</p>
+        <!-- Hero Card -->
+        <div class="relative">
+          <div class="absolute -inset-3 bg-rose-200/50 rounded-3xl -rotate-1 -z-10 blur-sm"></div>
+          <div class="bg-white p-4 rounded-2xl shadow-xl border border-rose-200">
+            <div class="aspect-[4/3] bg-stone-100 rounded-xl overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80" alt="Glamorous content creators" class="object-cover w-full h-full">
+              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-rose-100 shadow-md">
+                <p class="text-xs font-bold uppercase text-rose-500 tracking-wider">Proven Track Record</p>
+                <p class="font-serif text-2xl font-bold text-stone-900">$7,000,000+ <span class="text-xs font-sans text-stone-500 font-normal">Generated for Creators</span></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="bg-white py-24 border-t border-rose-200">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+    <!-- PAGE 2: ABOUT US -->
+    <section id="about" class="page-section hidden min-h-[calc(100vh-80px)] max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5">
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Who We Are</span>
+          <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-6 leading-tight">
+            Treating creators as partners, never commodities.
+          </h2>
+          <div class="p-6 bg-rose-50 rounded-2xl border border-rose-200 mb-8">
+            <p class="text-stone-700 text-sm font-medium italic">
+              "Officially established in 2026, but already operating since 2019, we provide elite, end-to-end management built on a foundation of absolute discretion, safety, and sustainable growth."
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-4 text-center">
+            <div class="p-4 bg-white rounded-xl border border-rose-200">
+              <p class="font-serif text-3xl font-bold text-stone-900">$7M+</p>
+              <p class="text-[10px] font-bold uppercase tracking-widest text-rose-500 mt-1">Generated</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl border border-rose-200">
+              <p class="font-serif text-3xl font-bold text-stone-900">Top 0.1%</p>
+              <p class="text-[10px] font-bold uppercase tracking-widest text-rose-500 mt-1">Account Placements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6 text-stone-600 leading-relaxed font-normal">
+          <p>
+            In a rapidly evolving industry, our multi-year track record reflects our unwavering commitment to our creators' long-term success, financial security, and personal well-being. Our founders have been in the industry for years and find it has always treated models as commodities—<strong class="text-rose-600 font-semibold">NOT here!</strong>
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-6 pt-2">
+            <div class="bg-white p-6 rounded-xl border border-rose-200">
+              <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Uncompromising Safety & Control</h3>
+              <p class="text-sm">Your boundaries and autonomy are non-negotiable. You retain complete creative control and veto power over all content, promotions, and brand direction, ensuring your comfort and privacy are always protected.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-rose-200">
+              <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Strategic Growth & Excellence</h3>
+              <p class="text-sm">We handle the complexities of scaling! Including 24/7 professional subscriber engagement, advanced marketing funnels, and meticulous account management, allowing you to focus entirely on your content and your life.</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-rose-200">
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">A Proven Track Record of Reliability</h3>
+            <p class="text-sm">From transparent reporting to punctual, dependable payouts, our partnership is defined by institutional integrity. When you join our roster, you are supported by a seasoned team dedicated to elevating your brand while safeguarding your peace of mind. Let’s build your wealth together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: SERVICES -->
+    <section id="services" class="page-section hidden min-h-[calc(100vh-80px)] max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
+      <div class="text-center max-w-2xl mx-auto mb-12">
         <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Full Service Management</span>
-        <h2 class="font-serif text-4xl font-normal text-stone-900 mb-4">How We Scale Your Account</h2>
+        <h2 class="font-serif text-4xl lg:text-5xl font-normal text-stone-900 mb-4">How We Scale Your Account</h2>
         <p class="text-stone-600 font-normal">We handle the grueling backend work so you can maintain full privacy, create content, and enjoy your freedom.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-softbg p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
+        <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
           <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">01</div>
           <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">24/7 Chatters & PPV Sales</h3>
           <p class="text-stone-600 text-sm leading-relaxed">Our elite, native-English chatting team works in shift rotations to sell high-ticket PPV content, build subscriber loyalty, and maximize tips around the clock.</p>
         </div>
 
-        <div class="bg-softbg p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
+        <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
           <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">02</div>
           <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Viral Organic Marketing</h3>
           <p class="text-stone-600 text-sm leading-relaxed">Dedicated marketing team that drives thousands of targeted, paying subscribers to your page daily across TikTok, Instagram Reels, and Reddit.</p>
         </div>
 
-        <div class="bg-softbg p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
+        <div class="bg-white p-8 rounded-2xl border border-rose-200 shadow-sm hover:border-rose-400 transition-all duration-300">
           <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-500 font-bold mb-6">03</div>
           <h3 class="font-serif text-2xl font-semibold text-stone-900 mb-3">Brand Strategy & Protection</h3>
           <p class="text-stone-600 text-sm leading-relaxed">Content leaks management, copyright takedowns, custom pricing strategies, and full audit protection for complete peace of mind.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Creator Application Section -->
-  <section id="creator-apply" class="max-w-4xl mx-auto px-6 lg:px-8 py-20">
-    <div class="bg-white p-10 md:p-14 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/50">
-      <div class="text-center max-w-xl mx-auto mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Exclusive Roster</span>
-        <h2 class="font-serif text-4xl font-normal text-stone-900 mb-3">Creator Representation</h2>
-        <p class="text-stone-600 font-normal text-sm">We only accept limited creators per month to maintain tailored, high-touch strategy for every roster member.</p>
+    <!-- PAGE 4: CREATOR APPLICATION -->
+    <section id="creators" class="page-section hidden min-h-[calc(100vh-80px)] max-w-4xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
+      <div class="bg-white p-10 md:p-14 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/50">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Exclusive Roster</span>
+          <h2 class="font-serif text-4xl font-normal text-stone-900 mb-3">Creator Representation</h2>
+          <p class="text-stone-600 font-normal text-sm">We only accept limited creators per month to maintain tailored, high-touch strategy for every roster member.</p>
+        </div>
+
+        <form action="https://formspree.io/f/YOUR_CREATOR_FORM_ID" method="POST" class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Name or Stage Name</label>
+              <input type="text" name="creator_name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Instagram / TikTok Handle</label>
+              <input type="text" name="creator_socials" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="@handle">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Current Monthly Revenue</label>
+              <select name="creator_revenue" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+                <option>$0 - Just Starting</option>
+                <option>$1,000 - $5,000 / mo</option>
+                <option>$5,000 - $15,000 / mo</option>
+                <option>$15,000+ / mo</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Email Address</label>
+              <input type="email" name="creator_email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Tell Us About Your Goals</label>
+            <textarea name="creator_goals" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="What are your current struggles and what level of income are you looking to reach?"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-300/50">
+            Submit Creator Application
+          </button>
+        </form>
       </div>
+    </section>
 
-      <form action="https://formspree.io/f/YOUR_CREATOR_FORM_ID" method="POST" class="space-y-6">
-        <div class="grid md:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Name or Stage Name</label>
-            <input type="text" name="creator_name" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-          </div>
-          <div>
-            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Instagram / TikTok Handle</label>
-            <input type="text" name="creator_socials" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="@handle">
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Current Monthly Revenue</label>
-            <select name="creator_revenue" class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-              <option>$0 - Just Starting</option>
-              <option>$1,000 - $5,000 / mo</option>
-              <option>$5,000 - $15,000 / mo</option>
-              <option>$15,000+ / mo</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Email Address</label>
-            <input type="email" name="creator_email" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition">
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-xs uppercase tracking-widest font-bold text-stone-700 mb-2">Tell Us About Your Goals</label>
-          <textarea name="creator_goals" rows="3" required class="w-full bg-softbg border border-rose-200 rounded-xl px-4 py-3 text-sm text-stone-800 focus:outline-none focus:border-rose-400 transition" placeholder="What are your current struggles and what level of income are you looking to reach?"></textarea>
-        </div>
-
-        <button type="submit" class="w-full bg-rose-500 hover:bg-rose-600 text-white font-bold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-md shadow-rose-300/50">
-          Submit Creator Application
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Expanded Careers Section -->
-  <section id="careers-apply" class="bg-rose-50 py-20 border-t border-rose-200">
-    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+    <!-- PAGE 5: CAREERS APPLICATION -->
+    <section id="careers" class="page-section hidden min-h-[calc(100vh-80px)] max-w-4xl mx-auto px-6 lg:px-8 py-16 flex flex-col justify-center">
       <div class="bg-white p-10 md:p-14 rounded-3xl border border-rose-200 shadow-xl shadow-rose-100/50">
         <div class="text-center max-w-xl mx-auto mb-10">
           <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">We Are Hiring</span>
@@ -328,14 +326,15 @@
           </button>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-white border-t border-rose-200 py-10 text-center text-xs text-stone-500 tracking-wider">
+  <footer class="bg-white border-t border-rose-200 py-8 text-center text-xs text-stone-500 tracking-wider mt-auto">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex items-center gap-2">
-        <svg class="h-6 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="h-8 w-auto text-stone-900" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M 290 190 V 580 M 290 190 H 510 M 290 580 H 525" stroke="currentColor" stroke-width="26" stroke-linecap="square"/>
           <path d="M 370 340 H 460" stroke="currentColor" stroke-width="16"/>
           <path d="M 460 340 V 620 M 435 620 H 485" stroke="currentColor" stroke-width="16"/>
@@ -350,11 +349,33 @@
       <div>&copy; 2026 Étoile Noire Agency. All rights reserved.</div>
       <div class="flex gap-6">
         <a href="#about" class="hover:text-rose-500 transition">About</a>
-        <a href="#creator-apply" class="hover:text-rose-500 transition">Creators</a>
-        <a href="#careers-apply" class="hover:text-rose-500 transition">Team Careers</a>
+        <a href="#services" class="hover:text-rose-500 transition">Services</a>
+        <a href="#creators" class="hover:text-rose-500 transition">Creators</a>
+        <a href="#careers" class="hover:text-rose-500 transition">Careers</a>
       </div>
     </div>
   </footer>
+
+  <!-- SPA Router Script for Individual Page Navigation -->
+  <script>
+    function navigate() {
+      const hash = window.location.hash || '#home';
+      const sections = document.querySelectorAll('.page-section');
+      
+      sections.forEach(section => {
+        if ('#' + section.id === hash) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('hashchange', navigate);
+    window.addEventListener('load', navigate);
+  </script>
 
 </body>
 </html>
