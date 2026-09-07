@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Étoile Noire Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rose: {
+              50: '#fdf2f4',
+              100: '#fce7eb',
+              200: '#f7d0d8',
+              300: '#f1abb9',
+            },
+            softbg: '#FAF7F8',
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-softbg text-stone-800 font-sans antialiased selection:bg-rose-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-rose-100">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-3 group">
+        <!-- SVG Monogram / Logo -->
+        <svg class="w-9 h-9 text-stone-900 group-hover:opacity-80 transition" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+          <path d="M 25 15 L 25 85 M 25 15 L 65 15 M 25 50 L 55 50" stroke-width="4" stroke-linecap="square"/>
+          <path d="M 45 85 L 80 15 M 80 15 L 80 85" stroke-width="4" stroke-linecap="square"/>
+          <!-- Star Accent -->
+          <path d="M 80 28 L 80 12 M 72 20 L 88 20" stroke-width="2"/>
+        </svg>
+        <div class="flex flex-col leading-none">
+          <span class="font-serif text-xl tracking-[0.2em] font-semibold text-stone-900">ÉTOILÉ NOIRE</span>
+          <span class="text-[9px] tracking-[0.3em] text-stone-400 font-medium uppercase mt-1">Agency</span>
+        </div>
+      </a>
+      
+      <nav class="hidden md:flex items-center space-x-10 text-sm tracking-widest font-medium uppercase text-stone-600">
+        <a href="#services" class="hover:text-rose-400 transition">Services</a>
+        <a href="#process" class="hover:text-rose-400 transition">Our Process</a>
+        <a href="#case-studies" class="hover:text-rose-400 transition">Case Studies</a>
+        <a href="#clients" class="hover:text-rose-400 transition">Clients</a>
+      </nav>
+
+      <a href="#contact" class="bg-stone-900 hover:bg-rose-300 hover:text-stone-900 text-white px-7 py-3 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-sm">
+        Request Consultation
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative max-w-7xl mx-auto px-8 pt-20 pb-28 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-stone-700 text-xs tracking-widest uppercase font-medium mb-6">Bespoke Digital Solutions</span>
+      <h1 class="font-serif text-5xl lg:text-6xl font-normal text-stone-900 leading-[1.15] mb-8">
+        Elevating brands through quiet elegance & high-impact design.
+      </h1>
+      <p class="text-stone-600 text-lg font-light leading-relaxed mb-10 max-w-lg">
+        We partner with forward-thinking enterprises to create sophisticated digital identities, elevated user experiences, and strategic positioning.
+      </p>
+      <div class="flex items-center gap-5">
+        <a href="#contact" class="bg-rose-200 hover:bg-rose-300 text-stone-900 px-8 py-4 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-300 shadow-sm">
+          Start Your Project
+        </a>
+        <a href="#case-studies" class="border border-stone-300 hover:border-stone-900 text-stone-800 px-8 py-4 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-300">
+          Explore Work
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual Hero Image Container -->
+    <div class="relative">
+      <div class="absolute -inset-4 bg-rose-100/60 rounded-3xl -rotate-1 -z-10 blur-sm"></div>
+      <div class="bg-white p-4 rounded-2xl shadow-xl shadow-rose-100/50 border border-rose-100">
+        <div class="aspect-[4/3] bg-stone-100 rounded-xl overflow-hidden relative flex items-center justify-center">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" alt="Studio Space" class="object-cover w-full h-full opacity-90">
+          <div class="absolute inset-0 bg-stone-900/10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Banner / Clients -->
+  <section id="clients" class="bg-white py-12 border-y border-rose-100">
+    <div class="max-w-7xl mx-auto px-8">
+      <p class="text-center text-xs tracking-[0.25em] font-medium uppercase text-stone-400 mb-8">Trusted by visionaries worldwide</p>
+      <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 font-serif text-xl tracking-wider text-stone-700">
+        <span>FORBES</span>
+        <span>CUNITY</span>
+        <span>NETVEL</span>
+        <span>SAMSUNG</span>
+        <span>AMAZON</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-7xl mx-auto px-8 py-28">
+    <div class="text-center max-w-2xl mx-auto mb-20">
+      <h2 class="font-serif text-4xl font-normal text-stone-900 mb-4">Our Core Capabilities</h2>
+      <p class="text-stone-500 font-light">Thoughtfully crafted services designed to scale high-end luxury and boutique brands.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-10 rounded-2xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 transition-all duration-300">
+        <div class="w-12 h-12 rounded-full bg-rose-50 flex items-center justify-center text-rose-400 mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 73v4a2 2 0 002 2h4a2 2 0 002-2V7a2 2 0 00-2-2h-4a2 2 0 00-2 2v4a2 2 0 002 2h4a2 2 0 002-2V7"/></svg>
+        </div>
+        <h3 class="font-serif text-2xl font-normal text-stone-900 mb-4">Brand Strategy</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Defining your distinct identity, tone of voice, visual direction, and market positioning with timeless precision.</p>
+      </div>
+
+      <div class="bg-white p-10 rounded-2xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 transition-all duration-300">
+        <div class="w-12 h-12 rounded-full bg-rose-50 flex items-center justify-center text-rose-400 mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="font-serif text-2xl font-normal text-stone-900 mb-4">Digital Design</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Designing flawless, intuitive web and mobile interfaces that reflect sophistication and convert visitors seamlessly.</p>
+      </div>
+
+      <div class="bg-white p-10 rounded-2xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-200 transition-all duration-300">
+        <div class="w-12 h-12 rounded-full bg-rose-50 flex items-center justify-center text-rose-400 mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        </div>
+        <h3 class="font-serif text-2xl font-normal text-stone-900 mb-4">Growth & Operations</h3>
+        <p class="text-stone-500 text-sm leading-relaxed">Curated marketing initiatives and operational workflows designed to sustain long-term digital performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies / Portfolio -->
+  <section id="case-studies" class="bg-white py-28 border-t border-rose-100">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div>
+          <span class="text-xs tracking-[0.25em] font-medium uppercase text-rose-300 mb-3 block">Selected Works</span>
+          <h2 class="font-serif text-4xl font-normal text-stone-900">Featured Case Studies</h2>
+        </div>
+        <p class="text-stone-500 text-sm max-w-sm mt-4 md:mt-0 font-light">A glimpse into recent digital transformations created for our client partners.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Case Study 1 -->
+        <div class="group cursor-pointer">
+          <div class="aspect-[16/10] bg-rose-50 rounded-2xl overflow-hidden mb-6 relative border border-rose-100">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80" alt="Case study" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <span class="text-xs tracking-widest text-stone-400 uppercase font-medium">Strategy & Brand Identity</span>
+          <h3 class="font-serif text-2xl font-normal text-stone-900 mt-2 group-hover:text-rose-400 transition">Renovating High-Fashion E-Commerce</h3>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="group cursor-pointer">
+          <div class="aspect-[16/10] bg-rose-50 rounded-2xl overflow-hidden mb-6 relative border border-rose-100">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" alt="Case study" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <span class="text-xs tracking-widest text-stone-400 uppercase font-medium">Web Architecture & UI</span>
+          <h3 class="font-serif text-2xl font-normal text-stone-900 mt-2 group-hover:text-rose-400 transition">Scalable Architecture for Global Tech</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto px-8 py-28">
+    <div class="bg-white p-12 md:p-16 rounded-3xl border border-rose-100 shadow-xl shadow-rose-100/30">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="font-serif text-4xl font-normal text-stone-900 mb-4">Initiate a Conversation</h2>
+        <p class="text-stone-500 font-light text-sm">Tell us about your organization and goals. We respond to all inquiry requests within one business day.</p>
+      </div>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase tracking-widest font-medium text-stone-600 mb-2">Name</label>
+            <input type="text" name="name" required class="w-full bg-softbg border border-rose-100 rounded-xl px-5 py-3.5 text-sm text-stone-800 focus:outline-none focus:border-rose-300 transition">
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-widest font-medium text-stone-600 mb-2">Email Address</label>
+            <input type="email" name="email" required class="w-full bg-softbg border border-rose-100 rounded-xl px-5 py-3.5 text-sm text-stone-800 focus:outline-none focus:border-rose-300 transition">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs uppercase tracking-widest font-medium text-stone-600 mb-2">Project Brief & Timeline</label>
+          <textarea name="message" rows="4" required class="w-full bg-softbg border border-rose-100 rounded-xl px-5 py-3.5 text-sm text-stone-800 focus:outline-none focus:border-rose-300 transition" placeholder="Share a few details about your project scope..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-stone-900 hover:bg-rose-300 hover:text-stone-900 text-white font-semibold py-4 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 shadow-sm">
+          Submit Consultation Request
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-rose-100 py-12 text-center text-xs text-stone-400 tracking-wider">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="font-serif text-lg tracking-widest text-stone-800 font-medium">ÉTOILÉ NOIRE</div>
+      <div>&copy; 2026 Étoile Noire Agency. All rights reserved.</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-stone-700 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-stone-700 transition">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
