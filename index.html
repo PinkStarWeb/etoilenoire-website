@@ -319,7 +319,7 @@
 
             <!-- Screenshot Thumbnail Container -->
             <div class="overflow-hidden rounded-xl border border-stone-200 bg-stone-50 relative group cursor-pointer" onclick="openLightbox()">
-              <img id="active-screenshot" src="screenshot1.png" alt="Creator Earnings Screenshot" class="w-full h-64 object-cover object-top transform group-hover:scale-105 transition duration-500">
+              <img id="active-screenshot" src="screenshot1.jpg" alt="Creator Earnings Screenshot" class="w-full h-64 object-cover object-top transform group-hover:scale-105 transition duration-500">
               <div class="absolute inset-0 bg-rose-900/10 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
                 <span class="bg-white/90 backdrop-blur-sm text-stone-900 text-xs font-bold px-4 py-2 rounded-full shadow-lg">View Full Image</span>
               </div>
@@ -470,7 +470,7 @@
   <div id="lightbox" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
     <div class="relative max-w-4xl w-full bg-white rounded-2xl p-2 shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
       <button onclick="closeLightbox()" class="absolute top-4 right-4 bg-stone-900 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold hover:bg-rose-500 transition z-10">✕</button>
-      <img id="lightbox-img" src="screenshot1.png" alt="Earnings Proof" class="w-full h-auto rounded-xl max-h-[85vh] object-contain">
+      <img id="lightbox-img" src="screenshot1.jpg" alt="Earnings Proof" class="w-full h-auto rounded-xl max-h-[85vh] object-contain">
     </div>
   </div>
 
@@ -519,14 +519,14 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Screenshot Carousel Logic
+    // Screenshot Carousel Logic (Configured for .jpg files)
     const screenshots = [
-      'screenshot1.png',
-      'screenshot2.png',
-      'screenshot3.png',
-      'screenshot4.png',
-      'screenshot5.png',
-      'screenshot6.png'
+      'screenshot1.jpg',
+      'screenshot2.jpg',
+      'screenshot3.jpg',
+      'screenshot4.jpg',
+      'screenshot5.jpg',
+      'screenshot6.jpg'
     ];
     let currentIndex = 0;
 
